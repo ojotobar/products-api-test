@@ -18,7 +18,6 @@ namespace ProductApi.Controllers
             _logger = logger;
         }
 
-        // GET: api/products?category=1
         [HttpGet]
         public IActionResult Get([FromQuery] ProductCategory? category, string? name)
         {
